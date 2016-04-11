@@ -126,6 +126,9 @@ public class Video implements Serializable {
     public List<Category> categories;
     @Nullable
     private String password;
+    // Null if not 3d
+    @SerializedName("spacial")
+    public Spacial spacial;
 
     /** The resource_key field is the unique identifier for a Video object. It may be used for object comparison. */
     private String resourceKey;
