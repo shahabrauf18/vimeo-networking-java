@@ -200,7 +200,10 @@ public class VimeoAccount implements Serializable {
      * @return a new VimeoAccount, with the details of the other
      */
     @Nullable
-    public static VimeoAccount copy(final VimeoAccount other) {
+    public static VimeoAccount copy(@Nullable final VimeoAccount other) {
+        if (other == null) {
+            return null;
+        }
         String accessToken = other.getAccessToken();
         String tokenType = other.getTokenType();
         String scope = other.getScope();
