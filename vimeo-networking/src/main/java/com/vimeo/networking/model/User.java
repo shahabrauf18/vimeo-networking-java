@@ -85,6 +85,9 @@ public class User implements Serializable, Followable {
     @Nullable
     @GsonAdapterKey("badge")
     public UserBadge badge;
+    @Nullable
+    @GsonAdapterKey("content_filter")
+    public String[] contentFilter;
 
     public AccountType getAccountType() {
         if (this.account == null) {
