@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="model" pattern="src[vimeo-networking]:com.vimeo.networking.model.*||lib:com.vimeo.networking.model..*" />
+</component>
